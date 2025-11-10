@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cars shop</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+<body>
+
+<header>
+  <h1>festival Cars <i class='bxsbx-car'></i></h1>
+</header>
+
+<div class="filter">
+  <button class="active" onclick="filterCars('all', event)">all</button>
+  <button onclick="filterCars('eco', event)">eco</button>
+  <button onclick="filterCars('super', event)">super</button>
+  <button onclick="filterCars('sport', event)">sport</button>
+  <button onclick="filterCars('electric', event)">electric</button>
+</div>
+
+<div id="loading">loading Cars...</div>
+<div id="cars"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
